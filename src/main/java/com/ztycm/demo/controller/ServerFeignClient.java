@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.ztycm.demo.configuration.OpenFeignCallBack;
+import com.ztycm.demo.config.OpenFeignCallBack;
 
 @Component
 @FeignClient(value = "YCM-SERVER", fallback=OpenFeignCallBack.class) //这里的name对应调用服务的spring.applicatoin.name
